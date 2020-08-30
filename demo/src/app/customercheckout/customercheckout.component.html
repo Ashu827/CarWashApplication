@@ -1,0 +1,45 @@
+<app-header></app-header>
+<html>
+<body style="background-image: url('assets/hexBG.jpg'); height: 480px">
+    <h1 style="text-align: center;">GoGreen Checkout</h1>
+    <br>
+    <div>
+        <table style="font-size: 18px; text-align: center;">
+            <tr>
+                <th style="width: 25%;">Name</th>
+                <td style="width: 5%;">{{CheckPutdummy.name}}</td>
+                <td style="width: 25%;" rowspan="5"><img src="assets/carlogo.png" style="height: 250px; width: 250px;"></td>
+            </tr>
+            <tr>
+                <th style="width: 25%;">Car Model</th>
+                <td style="width: 25%;">{{CheckPutdummy.carModel}}</td>
+            </tr>
+            <tr>
+                <th style="width: 25%;">Car Type</th>
+                <td style="width: 25%;">{{CheckPutdummy.carType}}</td>
+            </tr>
+            <tr>
+                <th style="width: 25%;">Service Type</th>
+                <td style="width: 25%;">{{CheckPutdummy.serviceType}}</td>
+            </tr>
+            <tr>
+                <th style="width: 25%;">Preffered Time</th>
+                <td style="width: 25%;">{{CheckPutdummy.preferredTime}}</td>
+            </tr>
+            <tr>
+                <th style="width: 25%;">Package</th>
+                <td style="width: 25%;">{{CheckPutdummy.subscription}} jhvh</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <a href="https://pages.razorpay.com/pl_FROOaSx1bKjlPM/view"><input type="submit" value="Pay Now" class="pay_now"> </a>&nbsp;&nbsp;
+        <a href="review"><input type="submit" value="Pay Later" class="pay_now"> </a>
+         
+    </div>
+    
+</body>
+</html>
+<app-footer></app-footer>

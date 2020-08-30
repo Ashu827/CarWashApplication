@@ -1,0 +1,24 @@
+.foot {
+    background-color: #05192e;
+    color: white;
+    position: relative;
+    bottom: 0; 
+    margin-bottom: 0px;
+  
+    }
+
+.social-fo{
+    height: 40px; 
+    width: 40px; 
+    border-radius: 
+    50%;vertical-align: middle;
+}
+
+.vl {
+    border-left: 0.1px solid  #C0C0C0	;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }

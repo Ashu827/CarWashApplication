@@ -1,0 +1,32 @@
+
+<app-header></app-header>
+<body>
+    <div>
+        <h1 style="text-align: center;">Booking History</h1>
+    </div>
+    <br>
+    <br>
+        <table style="width: 80%; text-align: center; padding-left: 50px; font-size: 18px;">
+            <tr>
+                <th>Name</th>
+                <th>contactNumber</th>
+                <th>Car Model</th>
+                <th>Car Type</th>
+                <th>Service Type</th>
+                <th>Date and Time</th>
+                <th>Amount</th>
+                <th>Address</th>
+            </tr>
+            <br>
+            <tr>
+                <td> {{datalist.name}}</td>
+                <td>{{datalist.contactNumber}}</td>
+                <td>{{datalist.carModel}}</td>
+                <td>{{datalist.carType}}</td>
+                <td> {{datalist.serviceType}}</td>
+                <td>{{datalist.preferredTime}}</td>
+                <td> {{datalist.subscription}}</td>
+                <td> {{datalist.address}}</td>
+            </tr>
+        </table>
+</body>

@@ -1,0 +1,124 @@
+<app-header></app-header>
+
+<body style="background-image: url('assets/images-2.jpg'); ">
+<h1 style="text-align: center;">GoGreen Booking</h1>
+
+<form [formGroup]="bookingForm">
+    <div>
+        <table style="margin-left: auto; margin-right: auto;">  
+            <tr>
+                <td>
+                    <label class="field_name">Name<span class="required">*</span></label><br>
+                    <input type="text"  id="name" name="name" autocomplete="off" placeholder="Enter your Name" formControlName="name" required><br>
+                    <app-field-error-display [displayError]="isFieldValid('name')" errorMsg="Please enter your name">
+                    </app-field-error-display>
+                </td>&nbsp;&nbsp;&nbsp;
+                <td>
+                    <label class="field_name">EmailId<span class="required">*</span></label><br>
+                   <input type="text"  id="name" name="name" autocomplete="off" placeholder="Enter your email" formControlName="emailId" required><br>
+                   <app-field-error-display [displayError]="isFieldValid('emailId')" errorMsg="Please enter your email">
+                </app-field-error-display>
+                </td>
+            </tr>
+            <br>
+            
+            <tr>
+                <td>
+                    <label class="field_name">ContactNumber<span class="required">*</span></label><br>
+                    <input type="text"  id="name" name="name" autocomplete="off" placeholder="your Phone number" formControlName="contactNumber" required><br>
+                    <app-field-error-display [displayError]="isFieldValid('contactNumber')" errorMsg="Please provide your number">
+                    </app-field-error-display>
+                </td>&nbsp;
+                <td>
+                    <label class="field_name">CarModel<span class="required">*</span></label><br>
+                   <input type="text"  id="name" name="name" autocomplete="off" placeholder="Provide your car model" formControlName="carModel" required><br>
+                   <app-field-error-display [displayError]="isFieldValid('carModel')" errorMsg="Please provide your car model">
+                </app-field-error-display>
+                </td>
+            </tr>
+            <br>
+            
+            <tr>
+                <td>
+                    <label class="field_name">CarType<span class="required">*</span></label><br>
+                    <select  id="cartype" formControlName="carType">
+                        <option *ngFor="let option of options" [value]="option">
+                            {{ option }}
+                        </option>
+                    </select>
+                    <app-field-error-display [displayError]="isFieldValid('carType')" errorMsg="Please choose your car type">
+                    </app-field-error-display>
+                </td>&nbsp;
+                <td>
+                    <label class="field_name">ServiceType<span class="required">*</span></label><br>
+                   <select id="name" name="name" autocomplete="off" formControlName="serviceType" required><br>
+                    <option value="Residental car wash">Residental car wash</option>
+                    <option value="corporate car wash">Corporate car wash</option>
+                </select>
+                   <app-field-error-display [displayError]="isFieldValid('serviceType')" errorMsg="Please choose service type">
+                </app-field-error-display>
+                </td>
+            </tr>
+            <br>
+            
+            <tr>
+                <td>
+                    <label class="field_name_time">PreferredTime<span class="required">*</span></label><br>
+                   
+                    <input type="date"  id="name" name="name" autocomplete="off" placeholder="Choose your preferred time in dd-mm-yyyy format" formControlName="preferredTime" required><br>
+                    <app-field-error-display [displayError]="isFieldValid('preferredTime')" errorMsg="Please choose your preferred time">
+                    </app-field-error-display>
+                </td>&nbsp;
+                <td>
+                    <label class="field_name">Home Address<span class="required">*</span></label><br>
+                   <input type="text"  id="name" name="name" autocomplete="off" placeholder="Give your full address for car washing" formControlName="address" required><br>
+                   <app-field-error-display [displayError]="isFieldValid('address')" errorMsg="Please give your home address">
+                </app-field-error-display>
+                </td>
+            </tr>
+            <br>
+            
+            <tr>
+
+                <td>
+                    <label class="field_name_time">Package<span class="required">*</span></label><br>
+                   <select id="name" name="name" autocomplete="off"  formControlName="subscription" required><br>
+                    <option  value="200">1 wash- Rs 200</option>
+                    <option value="750">4 washes- Rs 750</option>
+                    <option value="1200">8 washes- Rs 1200</option>
+                    <option value="1500">12 washes- Rs 1500</option>
+                    
+                       
+                </select>
+                   <app-field-error-display [displayError]="isFieldValid('message')" errorMsg="Please add some messages">
+                </app-field-error-display>
+                </td>&nbsp;
+
+                <td>
+                    <label class="field_name_time">Messages<span class="required">*</span></label><br>
+                   <input type="text"  id="name" name="name" autocomplete="off" placeholder="Write your message if you have any specific requirements." formControlName="message" required><br>
+                   <app-field-error-display [displayError]="isFieldValid('message')" errorMsg="Please add some messages">
+                </app-field-error-display>
+                </td>
+                
+            </tr>
+            <br>
+        
+
+            <div><input type="checkbox" required><strong>I have read the<span style="color:blue"> Terms & Conditions</span></strong> </div>
+            <br>
+            <p>*Please submit this form to proceed with payment process</p>
+            <br>
+            <a>
+                <button type="submit" id="submit" (click)="carBooking()">SUBMIT</button>
+            </a>
+        
+        </table>
+    </div>
+</form>
+
+    
+</body>
+<br>
+<br>
+<app-footer></app-footer>

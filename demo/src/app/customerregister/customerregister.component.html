@@ -1,0 +1,39 @@
+<app-header></app-header>
+<body style="background-image: url('assets/hexBG.jpg');">
+    <form style="margin-left:30%; font-weight: bold; height: 480px; width: 500px; background-color: whitesmoke;
+    border-radius: 20px; " [formGroup]="registerForm" >
+   <div style="margin-left: 8%; padding-top: 5%;">
+      <h2 >Registration form for <strong style="color: #66B2FF;">Customer</strong></h2>
+      <p >Please fill in this form to login an account.</p>
+   
+          <div class="form-group">
+              <input type="text" formControlName="name" name="name" id="email" autocomplete="off" placeholder="Name" required><br>
+              <span *ngIf="isValid('name')">Name is required</span>
+            </div>
+          <br>
+          <div class="form-group">
+            <input type="email" formControlName="emailId" name="email" id="email" autocomplete="off" placeholder="Email Id" required><br>
+            <span *ngIf="isValid('emailId')">Email Id is required</span>
+        </div>
+          <br>
+   
+          <div class="form-group">
+              <input type="password" formControlName="password" name="password" id="pwd" autocomplete="off" placeholder="Password" required><br>
+              <span *ngIf="isValid('password')">Password is required</span>
+            </div>
+          <br>
+   
+   
+          <a>
+              <button type="submit" id="signin" class="btn btn-default" (click)="register()" [disabled]="!registerForm.valid">Register</button>
+          </a>
+          <br>
+          <br>
+          <p style="font-weight: normal;">alredy a customer? <a href="cust-login"> Click here</a></p>
+   
+   </div>
+      </form>
+   
+   </body>
+
+   <app-footer></app-footer>

@@ -1,0 +1,155 @@
+/* body {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #email {
+    width: 374px;
+    font-size: 18px;
+    height: 44px;
+    color: #a0a0a0;
+    border-radius: 7px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+  }
+  
+  #pwd {
+    width: 374px;
+    height: 44px;
+    font-size: 18px;
+    color: #a0a0a0;
+    border-radius: 7px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+  }
+  
+  
+  #forgot {
+    float: right;
+    color: #a0a0a0;
+    font-size: 14px;
+    display: inline;
+    margin-right: 35px;
+  }
+  
+  .checkbox {
+    display: inline;
+  }
+  
+  #signin {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 7px;
+    font-weight: bold;
+    border: none;
+    background-color: #12abdb;
+    border-radius: 3px;
+    width: 374px;
+    height: 35px;
+    border-radius: 25px;
+    
+  }
+  
+  body {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #email {
+    width: 374px;
+    font-size: 18px;
+    height: 44px;
+    color: #a0a0a0;
+    border-radius: 7px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+  }
+  
+  #pwd {
+    width: 374px;
+    height: 44px;
+    font-size: 18px;
+    color: #a0a0a0;
+    border-radius: 7px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+  }
+  
+  
+  #forgot {
+    float: right;
+    color: #a0a0a0;
+    font-size: 14px;
+    display: inline;
+    margin-right: 35px;
+  }
+  
+  .checkbox {
+    display: inline;
+  }
+  
+  #signin {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 7px;
+    font-weight: bold;
+    border: none;
+    background-color: #12abdb;
+    border-radius: 3px;
+    width: 374px;
+    height: 35px;
+    border-radius: 25px;
+    
+  }
+  
+     */
+
+
+     .formcontainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 70px;
+  }
+  
+  
+   body{
+   /* background-image: url("C:/Users/vishal/new1/src/assets/bg2.jpg");  */
+   background-repeat: no-repeat; 
+   background-size: auto;
+     height: 620px;
+     width: 1360px;
+   
+  } 
+  .formbody{
+      display: flex;
+      width: 290px;
+      min-height: 200px;
+      background-color: white;
+      box-shadow:0 5px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 25px;
+  }
+  
+  div > span {
+      font-size: 0.75rem;
+      color: firebrick;
+  }
+  
+  
+  
+  
+  .header{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 40px;      
+    }

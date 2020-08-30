@@ -1,0 +1,66 @@
+.b1{
+    height: 400px;
+    width: 1400px;
+}
+
+.b2{
+    height: 400px;
+    width: 1400px;
+}
+
+.m2{
+    height: 400px;
+    width: 1400px;
+}
+.border-item-menu{
+	font-size:1000%;
+	color: #66B2FF;
+}
+.why_choose_us{
+    float: none;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-left: 12%;
+     font-size: 15px;
+}
+.why_choose_icon{
+	font-size:700%;
+	color:#66B2FF;
+}
+.hover_image img{
+    height: 30%;
+     width: 25%;
+}
+.hover_image img:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+   box-shadow: 10px 10px 5px #66B2FF;
+}
+.btn{
+   
+    color: black;
+    font-size: 20px;
+    padding: 12px 24px;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+    border-radius: 40px;
+    text-align: center;
+    position: absolute;
+    top: 170%;
+    left: 25%;
+    width: 180px;
+    font-weight: bold;
+    font-style: italic;
+}
+.text-btn{
+    color: black;
+    font-size: 20px;
+    padding: 12px 24px;
+    position: absolute;
+    top: 162%;
+    left: 20%;
+    width: 350px;
+    font-weight: bold;
+    font-style: italic;
+}

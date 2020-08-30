@@ -1,0 +1,55 @@
+
+<app-header></app-header>
+<body>
+    <p>serviceproviderhome works!</p>
+<div>
+    <table *ngFor="let details of detailsList; let i = index ">
+        <tr>
+            <th>{{i}}</th>
+            <th>Name</th>
+            <th>contactNumber</th>
+            <th>Car Model</th>
+            <th>Car Type</th>
+            <th>Service Type</th>
+            <th>Date and Time</th>
+            <th>Amount</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <th>{{detailsList[i].name}}</th>
+            <th>{{detailsList.contactNumber}}</th>
+            <th>{{detailsList.carModel}}</th>
+            <th>{{detailsList.carType}}</th>
+            <th>{{detailsList.serviceType}}</th>
+            <th>{{detailsList.preferredTime}}</th>
+            <th>{{detailsList.subscription}}</th>
+            <th>{{detailsList.address}}</th>
+        </tr>
+        <tr>
+            <th></th>
+            <td></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td></td>
+        </tr>
+    </table>
+</div>
+</body>
+<app-footer></app-footer>

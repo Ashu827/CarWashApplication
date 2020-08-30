@@ -1,0 +1,16 @@
+img{
+    height: 200px; 
+    width: 200px; 
+    padding-left: 40%;
+    padding-top: 1%;
+}
+.pay_now{
+    width: 180px; 
+    height: 50px;
+    background-color: #528FF0; 
+    color: white;
+     font-weight: bold; 
+     font-size: 15px;
+     border-style: none;
+     cursor: pointer;
+}
